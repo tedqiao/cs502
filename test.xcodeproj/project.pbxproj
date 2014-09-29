@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EFBEF9D419AFE3E300E2B824 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = EFBEF9D319AFE3E300E2B824 /* main.c */; };
-		EFBEF9D619AFE3E300E2B824 /* test.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = EFBEF9D519AFE3E300E2B824 /* test.1 */; };
+		EFBEF9E319B0155A00E2B824 /* state_printer.c in Sources */ = {isa = PBXBuildFile; fileRef = EFBEF9E219B0155A00E2B824 /* state_printer.c */; };
+		EFBEF9E519B015A300E2B824 /* test.c in Sources */ = {isa = PBXBuildFile; fileRef = EFBEF9E419B015A300E2B824 /* test.c */; };
+		EFBEF9E719B015E900E2B824 /* z502.c in Sources */ = {isa = PBXBuildFile; fileRef = EFBEF9E619B015E900E2B824 /* z502.c */; };
+		EFBEF9EB19B0164000E2B824 /* base.c in Sources */ = {isa = PBXBuildFile; fileRef = EFBEF9EA19B0164000E2B824 /* base.c */; };
+		EFBEF9ED19B018D000E2B824 /* sample.c in Sources */ = {isa = PBXBuildFile; fileRef = EFBEF9EC19B018D000E2B824 /* sample.c */; };
+		EFBEF9F019B299E000E2B824 /* Queue.c in Sources */ = {isa = PBXBuildFile; fileRef = EFBEF9EF19B299E000E2B824 /* Queue.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,7 +22,6 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				EFBEF9D619AFE3E300E2B824 /* test.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
@@ -26,8 +29,17 @@
 
 /* Begin PBXFileReference section */
 		EFBEF9D019AFE3E300E2B824 /* test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = test; sourceTree = BUILT_PRODUCTS_DIR; };
-		EFBEF9D319AFE3E300E2B824 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		EFBEF9D519AFE3E300E2B824 /* test.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = test.1; sourceTree = "<group>"; };
+		EFBEF9DE19B012BA00E2B824 /* global.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = global.h; sourceTree = "<group>"; };
+		EFBEF9DF19B013B800E2B824 /* protos.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = protos.h; sourceTree = "<group>"; };
+		EFBEF9E019B014C900E2B824 /* z502.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = z502.h; sourceTree = "<group>"; };
+		EFBEF9E119B0152F00E2B824 /* syscalls.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = syscalls.h; sourceTree = "<group>"; };
+		EFBEF9E219B0155A00E2B824 /* state_printer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = state_printer.c; sourceTree = "<group>"; };
+		EFBEF9E419B015A300E2B824 /* test.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = test.c; sourceTree = "<group>"; };
+		EFBEF9E619B015E900E2B824 /* z502.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = z502.c; sourceTree = "<group>"; };
+		EFBEF9EA19B0164000E2B824 /* base.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = base.c; sourceTree = "<group>"; };
+		EFBEF9EC19B018D000E2B824 /* sample.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sample.c; sourceTree = "<group>"; };
+		EFBEF9EE19B21BD500E2B824 /* Queue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
+		EFBEF9EF19B299E000E2B824 /* Queue.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Queue.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +72,17 @@
 		EFBEF9D219AFE3E300E2B824 /* test */ = {
 			isa = PBXGroup;
 			children = (
-				EFBEF9D319AFE3E300E2B824 /* main.c */,
-				EFBEF9D519AFE3E300E2B824 /* test.1 */,
+				EFBEF9DE19B012BA00E2B824 /* global.h */,
+				EFBEF9DF19B013B800E2B824 /* protos.h */,
+				EFBEF9E019B014C900E2B824 /* z502.h */,
+				EFBEF9E119B0152F00E2B824 /* syscalls.h */,
+				EFBEF9E219B0155A00E2B824 /* state_printer.c */,
+				EFBEF9E419B015A300E2B824 /* test.c */,
+				EFBEF9E619B015E900E2B824 /* z502.c */,
+				EFBEF9EC19B018D000E2B824 /* sample.c */,
+				EFBEF9EA19B0164000E2B824 /* base.c */,
+				EFBEF9EE19B21BD500E2B824 /* Queue.h */,
+				EFBEF9EF19B299E000E2B824 /* Queue.c */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -117,7 +138,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFBEF9D419AFE3E300E2B824 /* main.c in Sources */,
+				EFBEF9EB19B0164000E2B824 /* base.c in Sources */,
+				EFBEF9E319B0155A00E2B824 /* state_printer.c in Sources */,
+				EFBEF9E519B015A300E2B824 /* test.c in Sources */,
+				EFBEF9F019B299E000E2B824 /* Queue.c in Sources */,
+				EFBEF9ED19B018D000E2B824 /* sample.c in Sources */,
+				EFBEF9E719B015E900E2B824 /* z502.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
